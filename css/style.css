@@ -209,6 +209,7 @@ nav .menu-icon {
 @media (max-width:820px){
     #home .container{
         flex-direction: column-reverse;
+      margin-top:6rem;
     }
     
 }
@@ -241,6 +242,12 @@ nav .menu-icon {
 .header-content h2{
     font-family: 'Amatic SC', cursive;
     font-size: 4rem;
+}
+@media (max-width:767px){
+  .header-content h2{
+    font-family: 'Amatic SC', cursive;
+    font-size: 2rem;
+}
 }
 .header-content p{
     line-height: 1.6;
