@@ -1,0 +1,107 @@
+:root:has(.mode:checked) {
+    --primary-hue: 35;
+    --primary-lightness: 44%;
+    --primary-saturation: 72%;
+    --light-hue: 0;
+    --light-saturation: 0%;
+    --light-lightness: 9%;
+    --color-default: #fff;
+    --color-secondary: #fff;
+    --color-tertiary: #9f9f9f;
+    --color-light-grey: #252525;
+}
+:root:has(.mode:checked) body,:root:has(.mode:checked) #home {
+    background-color: #202020;
+}
+:root:has(.mode:checked) #home .video-btn,:root:has(.mode:checked) #home .header-content {
+    color: #fff;
+}
+:root:has(.mode:checked) #home .btns  .indark{
+    background: hsl(35, 72%, 44%);
+}
+:root:has(.mode:checked) #home .btns .icon{
+background-image: linear-gradient(to right,hsl(35, 72%, 44%)  0 50%, transparent 50% 100%);
+}
+
+:root:has(.mode:checked) #home .btns .icon::before{
+    background-color: #202020;
+}
+:root:has(.mode:checked) .mode-group .dark {
+    display: none;
+}
+:root:has(.mode:checked) .mode-group .light {
+    display: block;
+}
+body:not(body:has(:target)):has(.mode:checked) li a[href="#home"],
+body:has(.home:target):has(.mode:checked) li a[href="#home"],
+body:has(.contact:target):has(.mode:checked) li a[href="#contact"],
+body:has(.gallery:target):has(.mode:checked) li a[href="#gallery"],
+body:has(.chefs:target):has(.mode:checked) li a[href="#chefs"] {
+    color: hsl(35, 72%, 44%);
+}
+:root:has(.mode:checked) nav{
+    background-color: #202020;
+    color: #fff;
+}
+:root:has(.mode:checked) nav .logo,
+:root:has(.mode:checked) nav .menu-icon
+{
+     color: #fff;
+    }
+body:has(.mode:checked) nav .nav-links a:hover {
+    color: #fff;
+}
+body:has(.mode:checked) .header-content p {
+    color: var(--color-tertiary);
+}
+:root:has(.mode:checked) #chefs p{
+    color: #fff;
+}
+:root:has(.mode:checked) #chefs p span{
+    color: hsl(35, 72%, 44%);
+}
+:root:has(.mode:checked) #chefs .card{
+    background-color: #202020;
+}
+:root:has(.mode:checked) #chefs .card picture::before {
+    background-image: url("../imgs/team-shape-dark.svg");
+}
+:root:has(.mode:checked) #chefs .card .card-contents h3{
+  color: #fff;
+}
+:root:has(.mode:checked) #gallery{
+    background-color: #202020;
+}
+:root:has(.mode:checked) #gallery p {
+    color: #fff;
+}
+
+
+:root:has(.mode:checked) #gallery p span {
+    color: hsl(35, 72%, 44%);
+}
+:root:has(.mode:checked) #contact p {
+    color: #fff;
+}
+
+:root:has(.mode:checked) #contact .details .box{
+    background-color: #202020;
+}
+:root:has(.mode:checked) #contact .details .box .icon i{
+    background-color: hsl(35, 72%, 44%);
+}
+:root:has(.mode:checked) #contact .info button{
+    background-color: hsl(35, 72%, 44%);
+}
+:root:has(.mode:checked) #contact p span {
+    color: hsl(35, 72%, 44%);
+}
+:root:has(.mode:checked) .part2 ul li i{
+color: hsl(35, 72%, 44%);
+}
+body:has(.mode:checked) .contact .details>div h3 {
+    color: #adadad;
+}
+:root:has(.mode:checked) .footer .inputs button{
+    background-color:hsl(35, 72%, 44%) ;
+}
