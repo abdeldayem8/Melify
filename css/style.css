@@ -253,6 +253,11 @@ nav .menu-icon {
     color: #4f4f5a;
     margin-block: 1.4rem;
 }
+@media (max-width:820px){
+    .header-content p{
+        margin-block: 0.9rem;
+    }
+}
 .header-content .btns{
     display: flex;
     align-items: center;
